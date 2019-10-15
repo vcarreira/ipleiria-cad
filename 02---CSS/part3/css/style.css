@@ -1,0 +1,63 @@
+html {
+    background-color: #eee;
+}
+
+.main-content {
+    margin-top: 1em;
+}
+
+.zone {
+    margin: .5em;
+    width: 100%;
+}
+
+.element {
+    display: flex;
+    justify-content: space-between;
+}
+
+.device-icon {
+    flex:  none;
+    width: 30px;
+    color: #4d719b;
+}
+
+.action-icon {
+    flex: none;
+    color: #444;
+}
+
+.element span:last-child {
+    flex:  none;
+}
+
+.reading {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.reading span:last-child {
+    font-size: 80%;
+    color: #ccc;
+}
+
+.device-on {
+    color: #f8da4c;
+}
+
+.agenda {
+    display: flex;
+    padding: .5em 0;
+}
+
+.agenda-schedule {
+    margin-right: .5em;
+    width: 3em;
+}
+
+@media screen and (max-width:768px) {
+    .element {
+        margin: 0 1em;
+    }
+}
