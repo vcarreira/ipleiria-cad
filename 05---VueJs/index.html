@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Sensors">
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1>Home Sweet Home</h1>
+        <nav>
+            <ul>
+                <li><a class="selected" href="/">Dashboard</a></li><!--
+             --><li><a href="history.html">History</a></li>
+            </ul>
+        </nav>
+        <div class="container" id="app">
+        <panel title="Kitchen">
+                <div class="element">
+                    <i class="device-icon fas fa-thermometer-empty"></i>
+                    <span class="reading">
+                        <span>Temperature</span>
+                        <span>5 minutes ago</span></span>
+                    <span>21.6 ºC</span>
+                </div>
+                <div class="element">
+                    <i class="device-icon far fa-lightbulb"></i>
+                    <span class="reading">
+                        <span>Lights</span>
+                        <span>10 minutes ago</span>
+                    </span>
+                    <a class="action-icon lamp"><i class="fas fa-toggle-off fa-lg"></i></a>
+                </div>
+                <div class="element">
+                    <i class="device-icon far fa-window-maximize"></i>
+                    <span class="reading">
+                        <span>West Window</span>
+                        <span>15 minutes ago</span>
+                    </span>
+                    <span>Open</span>
+                </div>
+                <div class="element">
+                    <i class="device-icon fas fa-window-maximize"></i>
+                    <span class="reading">
+                        <span>North Window</span>
+                        <span>15 minutes ago</span>
+                    </span>
+                    <span>Closed</span>
+                </div>
+        </panel>
+        <panel title="Living Room">
+            <div class="element">
+                <i class="device-icon fas fa-thermometer-empty"></i>
+                <span class="reading">
+                    <span>Temperature</span>
+                    <span>5 minutes ago</span>
+                </span>
+                <span>22.6 ºC</span>
+            </div>
+            <div class="element">
+                <i class="device-icon far fa-lightbulb"></i>
+                <span class="reading">
+                    <span>Ceiling Lights</span>
+                    <span>7 minutes ago</span>
+                </span>
+                <a class="action-icon lamp"><i class="fas fa-toggle-off fa-lg"></i></a>
+            </div>
+            <div class="element">
+                <i class="device-icon fas fa-lightbulb device-on"></i>
+                <span class="reading">
+                    <span>Ambient Lights</span>
+                    <span>7 minutes ago</span>
+                </span>
+                <a class="action-icon lamp"><i class="fas fa-toggle-on fa-lg"></i></a>
+            </div>
+            <div class="element">
+                <i class="device-icon fas fa-music device-on"></i>
+                <span class="reading">
+                    <span>Ambient Music</span>
+                    <span>17 minutes ago</span>
+                </span>
+                <a class="action-icon"><i class="far fa-stop-circle fa-lg"></i></a>
+            </div>
+        </panel>
+        <panel title="Basement">
+            <div class="element">
+                <i class="device-icon fas fa-bolt device-on"></i>
+                <span class="reading">
+                    <span>Dryer status</span>
+                    <span>5 minutes ago</span>
+                </span>
+                <span>On</span>
+            </div>
+            <div class="element">
+                <i class="device-icon fas fa-bolt"></i>
+                <span class="reading">
+                    <span>Washer status</span>
+                    <span>3 minutes ago</span>
+                </span>
+                <span>Off</span>
+            </div>
+            <div class="element">
+                <i class="device-icon fas fa-door-open device-on"></i>
+                <span class="reading">
+                    <span>Garage door</span>
+                    <span>7 minutes ago</span>
+                </span>
+                <span>Open</span>
+            </div>
+        </panel>
+
+        <weather city="Leiria"></weather>
+        <weather city="Lisbon"></weather>
+
+        <panel title="Clock">
+            <div>
+            <div class="element">
+                <i class="device-icon far fa-clock"></i>
+                <span class="reading">Time</span>
+                <span id="clockTime">22:30</span>
+            </div>
+            <div class="element">
+                <i class="device-icon far fa-calendar-alt"></i>
+                <span class="reading">Date</span>
+                <span id="clockDate">2018-09-18</span>
+            </div>
+        </div>
+        </panel>
+        <panel title="Agenda">
+            <div class="agenda">
+                <i class="device-icon fas fa-car"></i>
+                <span class="agenda-schedule">8:30</span>
+                <span class="agenda-task">Take kids to school</span>
+            </div>
+            <div class="agenda">
+                <i class="device-icon fas fa-business-time"></i>
+                <span class="agenda-schedule">9:30</span>
+                <span class="agenda-task">Conference preparation meeting</span>
+            </div>
+            <div class="agenda">
+                <i class="device-icon fas fa-utensils"></i>
+                <span class="agenda-schedule">12:30</span>
+                <span class="agenda-task">Lunch with conference general chair</span>
+            </div>
+            <div class="agenda">
+                <i class="device-icon fas fa-plane"></i>
+                <span class="agenda-schedule">15:00</span>
+                <span class="agenda-task">Flight to London</span>
+            </div>
+        </panel>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
